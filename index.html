@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+e<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -47,7 +47,7 @@
         input.addEventListener("input", updateValue);
 
         function updateValue(e) {
-            log.innerHTML = e.target.value;
+            log.innerHTML = encodeURIComponent(e.target.value);
         }
 
     </script>
